@@ -140,7 +140,10 @@ module.exports = function (grunt) {
                         '<%= yeoman.app %>/bower_components/underscore/underscore.js',
                         '<%= yeoman.app %>/bower_components/backbone/backbone.js',
                         '.tmp/scripts/templates.js'
-                    ]
+                    ],
+                    junit: {
+                        path: 'test/reports'
+                    }
                 }
             }
         },
