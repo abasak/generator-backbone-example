@@ -333,6 +333,15 @@ module.exports = function (grunt) {
         'watch:test'
     ]);
 
+    grunt.registerTask('ci', [
+        'clean:server',
+        'coffee',
+        'createDefaultTemplate',
+        'jst',
+        'compass',
+        'jasmine',
+    ]);
+
     grunt.registerTask('build', [
         'clean:dist',
         'coffee',
